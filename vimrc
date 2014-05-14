@@ -12,11 +12,10 @@ else
 endif
 
 Bundle 'gmarik/vundle'
-
+Bundle 'tfnico/vim-gradle'
 Bundle 'xuhdev/SingleCompile'
 Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/bufexplorer.zip'
-Bundle 'vim-scripts/c.vim'
 Bundle 'c9s/colorselector.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Raimondi/delimitMate'
@@ -25,6 +24,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'Shougo/neocomplcache.vim'
 Bundle 'Shougo/neosnippet'
 Bundle 'scrooloose/nerdtree'
+
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'ervandew/supertab'
@@ -44,9 +44,12 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'pangloss/vim-javascript'
 Bundle 'terryma/vim-multiple-cursors'
+
 Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'Lokaltog/vim-powerline'
 Bundle 'thinca/vim-quickrun'
+Bundle 'bling/vim-airline'
+
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
