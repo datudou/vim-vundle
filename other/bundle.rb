@@ -20,7 +20,6 @@ tpope/vim-endwise
 kchmck/vim-coffee-script
 ap/vim-css-color
 tpope/vim-fugitive
-nathanaelkane/vim-indent-guides
 michaeljsmith/vim-indent-object
 pangloss/vim-javascript
 jistr/vim-nerdtree-tabs
@@ -47,6 +46,11 @@ AndrewRadev/splitjoin.vim
 mattn/emmet-vim
 junegunn/vim-easy-align
 tomtom/tcomment_vim
+jiangmiao/auto-pairs
+Yggdroot/indentLine
+editorconfig/editorconfig-vim
+airblade/vim-gitgutter
+bling/vim-airline
 ].sort do |x, y|
   x.split(/\//)[1] <=> y.split(/\//)[1]
 end
@@ -105,7 +109,7 @@ ap/vim-css-color
 " 在vim中使用git
 tpope/vim-fugitive
 " 显示对齐线
-nathanaelkane/vim-indent-guides
+Yggdroot/indentLine
 " 快速选择同级的内容
 michaeljsmith/vim-indent-object
 " javascript支持
@@ -158,6 +162,14 @@ mattn/emmet-vim
 junegunn/vim-easy-align
 " 代码注释
 tomtom/tcomment_vim
+" 匹配括号引号等
+jiangmiao/auto-pairs
+" editorconfig
+editorconfig/editorconfig-vim
+" git 提示
+airblade/vim-gitgutter
+" 状态栏显示
+bling/vim-airline
 =end
 
 =begin
