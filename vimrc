@@ -11,6 +11,7 @@ else
   call vundle#rc()
 endif
 
+Bundle 'vim-mou'
 Bundle 'gmarik/vundle'
 Bundle 'tfnico/vim-gradle'
 Bundle 'xuhdev/SingleCompile'
@@ -107,3 +108,7 @@ map <C-A> ggVG
 
 " Use neocomplcache
 let g:neocomplcache_enable_at_startup = 1
+
+
+"let g:mou_dir = "/Applications/Mou.app"
+
