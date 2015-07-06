@@ -2,6 +2,7 @@ set guioptions=ce
 set antialias
 set linespace=2
 set vb t_vb=
+exec "color koehler"
 
 if has("gui_macvim")
   set guifont=Monaco:h14

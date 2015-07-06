@@ -1,7 +1,15 @@
 " Easy version Vimrc
+"
+"
 
 set nocompatible
 filetype off
+
+set history=2000
+set autoread
+set nobackup
+
+
 
 if has("win32") || has("win64")
   set rtp+=$VIM\vimfiles\bundle\vundle
@@ -11,11 +19,17 @@ else
   call vundle#rc()
 endif
 
-Bundle 'vim-mou'
+
 Bundle 'gmarik/vundle'
-Bundle 'tfnico/vim-gradle'
-Bundle 'xuhdev/SingleCompile'
+" ----------------------
+"Bundle 'tfnico/vim-gradle'
+" ----------------------
+"1. 编译运行一个简单的源文件
+"Bundle 'xuhdev/SingleCompile'
+" ----------------------
+" A code search tool
 Bundle 'mileszs/ack.vim'
+" ----------------------
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'c9s/colorselector.vim'
@@ -75,9 +89,13 @@ Bundle 'jonathanfilip/vim-lucius'
 Bundle 'jpo/vim-railscasts-theme'
 Bundle 'ywjno/vim-tomorrow-theme'
 Bundle 'node.js'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'lukaszkorecki/CoffeeTags'
+Bundle 'npm.vim'
 
 
 filetype plugin indent on
+
 
 " =============
 "  custom key
@@ -90,7 +108,7 @@ noremap <BS> X
 
 " map ctrl+c and ctrl+v
 noremap <C-c> y
-noremap <C-v> P
+"noremap <C-v> P
 
 " cancel searched highlight
 noremap ; :nohlsearch<CR>
@@ -109,6 +127,10 @@ map <C-A> ggVG
 " Use neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
+" Ctags
+let g:tagbar_ctags_bin = '/usr/local/Cellar/ctags/5.8/bin/ctags'
 
 "let g:mou_dir = "/Applications/Mou.app"
+
+
 
